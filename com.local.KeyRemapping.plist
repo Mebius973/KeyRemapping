@@ -8,6 +8,44 @@
     <array>
         <string>/Users/GS104/.remapKeys/remapKeys.sh</string>
     </array>
+     <key>LaunchEvents</key>
+    <dict>
+        <key>com.apple.iokit.matching</key>
+        <dict>
+            <key>com.apple.device-attach</key>
+            <dict>
+                <!-- USB HUB -->
+                <key>idProduct</key>
+                <integer>0xc52b</integer>
+                <key>idVendor</key>
+                <integer>0x46d</integer>
+                <key>IOProviderClass</key>
+                <string>AppleUserHIDDevice</string>
+                <key>IOMatchLaunchStream</key>
+                <true/>
+
+                <!-- Noppoo Keyboard -->
+                <key>idProduct</key>
+                <integer>0x8400</integer>
+                <key>idVendor</key>
+                <integer>0x1007</integer>
+                <key>IOProviderClass</key>
+                <string>IOUSBHIDDriverDescriptorOverride</string>
+                <key>IOMatchLaunchStream</key>
+                <true/>
+
+                <!-- Qpad Keyboard -->
+                <key>idProduct</key>
+                <integer>0x101</integer>
+                <key>idVendor</key>
+                <integer>0x4b4</integer>
+                <key>IOProviderClass</key>
+                <string>AppleUserHIDDevice</string>
+                <key>IOMatchLaunchStream</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
     <key>RunAtLoad</key>
     <true/>
 </dict>
